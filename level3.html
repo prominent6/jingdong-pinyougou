@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悬浮框</title>
+
+    <style>
+        .box {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            width: 250px;
+            margin: 0px auto;
+            margin-top: 25%;
+            background-color: white;
+            border-radius: 14px;
+        }
+        
+        .content {
+            color: black;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .yuanquan {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            border-radius: 50px;
+            border: solid red;
+            font-size: 2px;
+            color: red;
+        }
+        
+        .content:hover {
+            cursor: pointer;
+        }
+        
+        .content:hover:before {
+            content: attr(data-content);
+            position: absolute;
+            top: 100%;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 14px;
+            background-color: black;
+            color: white;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="box">
+        <span class="yuanquan">!</span>
+        <span data-content="Sample test for your  tooltip!" class="content">Hover over the "!"!</span>
+    </div>
+</body>
+
+</html>

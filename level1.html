@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>效果实现</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-between;
+            /* padding: 20px; */
+            /* border: 1px solid grey; */
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        @media only screen and (max-width:640px) {
+            .item4 {
+                order: -2;
+            }
+        }
+        /* div>div {
+            border: 1px solid #f00;
+            width: 250px;
+            margin: 50px;
+            justify-content: space-between;
+            border-width: 5px;
+            align-items: flex-start;
+            float: center;
+        } */
+        
+        .item {
+            width: 150px;
+            height: 200px;
+            border: 1px solid red;
+            /* padding-left: 30px;
+             */
+            margin-left: 30px;
+            border-width: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item" sytle="height: 120px;"></div>
+        <div class="item" style="height: 100px;"></div>
+        <div class="item" style="height: 40px;"></div>
+        <div class="item item4" style="height: 200px;border-color: blue;"></div>
+        <!-- <div style="height: 120px;padding-left: 250px;"></div>
+        <div style="height: 100px;"></div>
+        <div style="height: 40px;"></div>
+        <div style="height: 200px;border-color: blue;"></div> -->
+
+    </div>
+</body>
+
+</html>
