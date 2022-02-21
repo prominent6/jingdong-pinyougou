@@ -1,0 +1,104 @@
+.judge-header-wrap {
+    margin-top: 25px;
+    width: 100%;
+    height: 38px;
+}
+
+.judge-header-wrap .judge-header {
+    width: 988px;
+    margin: -1px auto 0;
+    border-bottom: 1px solid #e2231a;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #f0f3ef;
+}
+
+.judge-header .header-left li {
+    float: left;
+    width: 120px;
+    height: 38px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.judge-header .header-left .special {
+    width: 160px;
+    background-color: #e4393c;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.judge-header .header-right li {
+    float: right;
+    width: 92px;
+    height: 28px;
+    line-height: 28px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #df3033;
+    margin: 5px 10px;
+}
+
+.judge-content-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.judge-content-wrap .judge-content {
+    width: 990px;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.judge-content .mt {
+    width: 968px;
+    height: 18.29px;
+    line-height: 18.29px;
+    padding: 10px;
+    color: #666666;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    border: 1px solid #f3f3f3;
+}
+
+.judge-content .judge-info {
+    width: 990px;
+    height: 93px;
+    line-height: 33px;
+    padding: 25px 40px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.judge-content .judge-info .info1 {
+    width: 36px;
+}
+
+.judge-content .judge-info .info2 {
+    width: 90px;
+    height: 57.5px;
+    line-height: 57.5px;
+    font-size: 45px;
+    color: #e4393c;
+}
+
+.judge-content .judge-info .info2 span {
+    font-size: 23px;
+}
+
+.judge-content .tab {
+    width: 968px;
+    height: 28.83px;
+    line-height: 28.83px;
+    padding-left: 20px;
+    background-color: #fafafa;
+    color: #e4393c;
+    font-size: 13px;
+    border: 1px solid #f3f3f3;
+}
+
+
+/* .judge-content .judge-inner{
+
+} */
