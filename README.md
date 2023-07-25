@@ -12,6 +12,7 @@
 * 更新该项目的结构  （index页面)
   ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/cab1e24d-780b-4579-a516-994a48e54c4e)
 
+***
 ## 原生js仿京东 jingdong_1 静态页面
 ### 1 登录/注册页
 ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/95616b46-a767-40f0-a141-04c085039bb1)
@@ -33,7 +34,7 @@
 ### 5 我的购物车
 ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/7a2b81f4-5750-47cf-9b97-affeb24fca02)
 
-
+***
 ## 尚硅谷品优购项目练习
 * 通过该练习熟练布局
 ### 1 主页
