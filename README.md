@@ -1,13 +1,13 @@
 # jingdong-pinyougou
 * 仅供参考，建议在此基础上添加功能
 
-## 原生js仿京东 jingdong_3
+## 原生js仿京东 jingdong_3 
 * 优化了index页面的布局方式
 * 新增了模块，增加了动画效果
 
 ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/43d5a93f-4e05-49fe-8983-1cd24ebe85bf)
 
-* -
+***
 ## 原生js仿京东 jingdong_index2 
 * 更新该项目的结构  （index页面)
   ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/cab1e24d-780b-4579-a516-994a48e54c4e)
