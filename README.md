@@ -35,4 +35,12 @@
 
 
 ## 尚硅谷品优购项目练习
+* 通过该练习熟练布局
+### 1 主页
+![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/36403f67-aa24-4072-a350-5d60bcc7f23f)
+![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/691bffa1-627e-4da6-80f1-2e187e60d4c4)
+
+### 2 详情页
+![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/969a3a60-1e82-4095-95f2-82aa4215e2d3)
+![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/1244d543-8ecd-45a4-abd3-63b50635162a)
 
