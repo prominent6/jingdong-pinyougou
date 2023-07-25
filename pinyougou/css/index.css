@@ -1,0 +1,239 @@
+/* 首页的样式 */
+
+.w .main {
+    width: 980px;
+    height: 455px;
+    margin-left: 219px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    position: relative;
+    width: 720px;
+    height: 455px;
+    background-color: purple;
+}
+
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.focus .circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.main .newsflash {
+    width: 250px;
+    height: 455px;
+}
+
+.newsflash .news {
+    height: 163px;
+    border: 1px solid #ccc;
+}
+
+.news_hd {
+    height: 32px;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 15px;
+}
+
+.news_hd a {
+    float: right;
+    font-size: 12px;
+}
+
+.news_bd {
+    padding: 10px 0 0 15px;
+}
+
+.news_bd li {
+    height: 25px;
+}
+
+.newsflash .lifeservice {
+    height: 208px;
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.lifeservice li a {
+    display: block;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.lifeservice li a i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+.lifeservice li {
+    text-align: center;
+}
+
+.newsflash .bargin {
+    height: 75px;
+    margin-top: 5px;
+    background-color: pink;
+}
+
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+
+.recommend .recom-hd {
+    width: 200px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+.recommend .recom-bd {
+    width: 1000px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+.recom-bd li {
+    float: left;
+    width: 249px;
+    height: 145px;
+    border-right: 1px solid #ccc;
+    margin-top: 10px;
+    /* background-color: pink; */
+}
+
+.recom-bd .last {
+    border-right: 0px;
+}
+
+
+/* floor楼层区 */
+
+.box-hd {
+    height: 30px;
+    background-color: pink;
+    border-bottom: 2px solid #c81623;
+    margin-top: 25px;
+}
+
+.box-hd h3 {
+    font-size: 18px;
+    color: #c81623;
+}
+
+.box-hd .tab-list {
+    line-height: 30px;
+}
+
+.box-hd .tab-list li {
+    float: left;
+}
+
+.box-hd .tab-list li a {
+    margin: 0 15px;
+}
+
+.box-bd {
+    height: 361px;
+    background-color: pink;
+}
+
+.w209 {
+    width: 209px;
+}
+
+.w329 {
+    width: 329px;
+}
+
+.w220 {
+    width: 220px;
+    border-right: 1px solid #ccc;
+}
+
+.w219 {
+    width: 219px;
+    border-right: 1px solid #ccc;
+}
+
+.box-bd .tab-con li {
+    float: left;
+    height: 361px;
+}
+
+
+/* 侧边栏的制作 */
+
+.fixedtool {
+    position: fixed;
+    width: 66px;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    /* 版心的一半+自己的width +任意距离*/
+    background-color: #fff;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81632;
+    color: #fff;
+}

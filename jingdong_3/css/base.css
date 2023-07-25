@@ -1,0 +1,18 @@
+/* 版心 */
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* 公共样式 */
+
+.fl {
+    float: left;
+  }
+    
+.fr {
+    float: right;
+} 
+.iconfont{
+    font-size: 12px;
+}

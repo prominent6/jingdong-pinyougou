@@ -1,0 +1,136 @@
+/* 列表区样式 */
+
+
+/* 列表页内容区域 */
+
+.sk_hd {
+    height: 120px;
+    background-color: pink;
+}
+
+.sk_bd {
+    margin-top: 25px;
+}
+
+.sk_bd ul {
+    width: 1212px;
+}
+
+.sk_goods {
+    float: left;
+    position: relative;
+    width: 288px;
+    height: 458px;
+    border: 1px solid transparent;
+    margin-right: 0 12px 15px 0;
+}
+
+.sk_goods:hover {
+    border: 1px solid #e12228;
+}
+
+.sk_goods .image {
+    width: 283px;
+    height: 290px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+
+.sk_goods_title {
+    font-size: 14px;
+    padding: 10px;
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+}
+
+.sk_goods_price {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.sk_goods_price em {
+    font-size: 22px;
+    color: #e60012;
+}
+
+.sk_goods_price del {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a4a4a4;
+}
+
+.sk_goods_progress {
+    padding: 0 10px;
+}
+
+.bar {
+    display: inline-block;
+    width: 130px;
+    height: 10px;
+    border: 1px solid #b1191a;
+    vertical-align: middle;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.bar_in {
+    height: 10px;
+    background-color: #f24349;
+    width: 87%;
+}
+
+.sk_goods_progress em,
+.sk_goods_progress i {
+    color: #f24349;
+}
+
+.sk_goods_buy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.page {
+    margin: 40px 0;
+    text-align: center;
+    /* 里面的文字内容 行内块 行内元素 都可以水平居中对齐 */
+}
+
+.page_num a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.page_num .pn_prev,
+.page_num .pn_next {
+    width: 83px;
+}
+
+.page_num .current {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.page_skip input {
+    width: 46px;
+    height: 36px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.page_skip button {
+    width: 56px;
+    height: 36px;
+    border: 1px solid #ccc;
+}

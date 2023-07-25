@@ -1,0 +1,899 @@
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+
+/* 设置顶部导航条外部容器 */
+
+.top-bar-wrapper {
+    width: 100%;
+    background-color: #e3e4e5;
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 设置顶部导航条内部容器 */
+
+.top-bar {
+    width: 1190px;
+    margin: 0 auto;
+    /* 在父元素中水平居中 */
+    position: relative;
+}
+
+.top-bar a:hover {
+    color: #e33333;
+}
+
+.top-bar a.highlight {
+    color: #f00;
+}
+
+.top-bar a,
+.top-bar i,
+.top-bar span {
+    color: #999999;
+}
+
+.top-bar .line {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 11px 12px 0;
+}
+
+
+/* 设置左侧位置菜单 */
+
+.location {
+    float: left;
+}
+
+.location .fas {
+    color: #f10215;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+
+/* 设置左侧位置菜单的下拉框 */
+
+.location .city-list {
+    display: none;
+    width: 320px;
+    height: 436px;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    position: absolute;
+    /* 设置绝对定位，使其不占页面位置 */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    z-index: 9999;
+    top: 31px;
+}
+
+.location .city-list a {
+    display: block;
+    float: left;
+    width: 64px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 4px 0;
+    text-align: center;
+}
+
+
+/* 当鼠标移入到location时，让city-list显示 */
+
+.location:hover .city-list {
+    display: block;
+}
+
+.city-list .cq,
+.city-list .cq:hover {
+    color: white;
+    background-color: red;
+}
+
+.city-list a:hover {
+    background-color: #e3e4e5;
+}
+
+.current-city {
+    padding: 0 10px;
+    position: relative;
+    z-index: 9999;
+    border: 1px solid transparent;
+    border-bottom: none;
+    /* 提前设置好边框，可避免字体变化 */
+}
+
+.location:hover .current-city {
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+
+/* 设置右侧菜单 */
+
+.shortcut {
+    float: right;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.shortcut .fas {
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/* 设置右侧菜单的下拉框 */
+
+.shortcut .my-list,
+.shortcut .firm-list,
+.shortcut .service-list,
+.shortcut .web-list {
+    display: none;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    position: absolute;
+    /* 设置绝对定位，使其不占页面位置 */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    /* margin-left: -12px; */
+    z-index: 9999;
+    top: 31px;
+}
+
+.my-list {
+    width: 280px;
+    height: 161px;
+}
+
+.firm-list {
+    width: 157px;
+    height: 166px;
+}
+
+.service-list {
+    width: 172px;
+    height: 273px;
+}
+
+.web-list {
+    width: 990px;
+    height: 229px;
+    right: -84px;
+}
+
+.my-jd:hover .my-list,
+.firm-cg:hover .firm-list,
+.service-kh:hover .service-list,
+.web-dh:hover .web-list {
+    display: block;
+}
+
+.my-list-wrapper:hover .my {
+    background-color: white;
+    border: 1px solid #e3e4e5;
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+
+/* 设置手机京东的二维码 */
+
+.shortcut .code {
+    position: absolute;
+}
+
+.shortcut .code img {
+    position: absolute;
+    margin: 5px;
+    z-index: 9998;
+}
+
+
+/* 设置头部外部容器 */
+
+.header-wrapper {
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* 设置头部内部容器 */
+
+.header {
+    position: relative;
+    height: 140px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+
+/* 设置logo */
+
+.header .logo img {
+    position: absolute;
+    background-color: #fff;
+    margin: auto 25px;
+    float: left;
+}
+
+
+/* 设置搜索框 */
+
+.search-wrapper {
+    position: absolute;
+    float: left;
+    left: 260px;
+    width: 554px;
+    height: 36px;
+    border: 2px solid #e2231a;
+    top: 25px;
+}
+
+.search-wrapper .search-inp {
+    float: left;
+    width: 425px;
+    height: 30px;
+    line-height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.search-wrapper .search-btn {
+    position: absolute;
+    float: right;
+    width: 67px;
+    height: 37px;
+    line-height: 33px;
+    top: -1px;
+    background-color: #e1251b;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    right: 0px;
+}
+
+.search-wrapper span {
+    color: #d8d0d0;
+    /* width: 19px;
+    height: 15px; */
+    font-size: 15px;
+    left: -36px;
+    top: 5px;
+    position: relative;
+}
+
+.search-wrapper span:hover {
+    color: #e1251b;
+}
+
+.search-wrapper .search-btn:hover {
+    background-color: #c81623;
+}
+
+
+/* 设置购物车 */
+
+.shop-cart {
+    position: absolute;
+    right: 210px;
+    top: 25px;
+}
+
+.shop-cart .cart {
+    width: 130px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #fff;
+    border: 1px solid #e3e4e5;
+    text-align: center;
+}
+
+.shop-cart .fas {
+    margin-right: 10px;
+}
+
+.cart .fas,
+.cart .shop {
+    color: #e1251b;
+}
+
+.cart:hover {
+    border-color: #e1251b;
+}
+
+
+/* 设置热词样式 */
+
+.hotwords {
+    position: absolute;
+    left: 260px;
+    top: 77px;
+    width: 450px;
+    height: 20px;
+}
+
+.hotwords a {
+    color: #999999;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.hotwords .hotwords-highlight,
+.hotwords a:hover {
+    color: #e1251b;
+}
+
+
+/* 设置总导航样式 */
+
+.nav {
+    position: absolute;
+    left: 230px;
+    top: 90px;
+    height: 20px;
+    line-height: 20px;
+    padding: 20px 0 0;
+}
+
+.nav a {
+    font-size: 15px;
+    margin: 0 11px;
+    color: #333333;
+}
+
+.nav .nav-highlight {
+    color: #e1251b;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: #e1251b;
+}
+
+
+/* 中间部分-左侧导航栏 */
+
+.banner-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    background-color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.banner {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.left-nav {
+    width: 190px;
+    height: 450px;
+    padding: 10px 0;
+    background-color: #fefefe;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.left-nav .item {
+    width: 172px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+}
+
+
+/* 设置菜单内部的item */
+
+.item:hover {
+    background-color: #d9d9d9;
+}
+
+
+/* 为item设置一个鼠标移入的状态 */
+
+.item a {
+    color: #333333;
+    font-size: 14px;
+}
+
+.item a:hover {
+    color: #c81623;
+}
+
+.item span {
+    font-size: 12px;
+    padding: 0px 2px;
+    color: #636363;
+}
+
+
+/* 下拉表单 */
+
+.banner .application {
+    width: 998px;
+    height: 498px;
+    padding: 20px 0 10px;
+    position: relative;
+    left: 189px;
+    top: -465px;
+    z-index: 99999;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.banner .application .application-upper {
+    width: 780px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 0 0 20px;
+}
+
+.application .application-upper li {
+    float: left;
+    width: 70px;
+    height: 24px;
+    padding: 0 10px;
+    margin: 0 10px 0 0;
+    background-color: #333333;
+}
+
+.application .application-upper li:hover {
+    background-color: #e1251b;
+    cursor: pointer;
+}
+
+.application .application-upper li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.banner .application .application-bottom {
+    width: 780px;
+    height: 398px;
+    padding: 10px 0 0 20px;
+}
+
+.application .application-bottom .bottom1 {
+    width: 800px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    /* padding: 0 0 0 80px; */
+}
+
+.application .application-bottom .bottom1 .hz {
+    width: 70px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+}
+
+.application .application-bottom .bottom1 .hz a {
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.application .application-bottom .bottom1 .hz a:hover {
+    color: #e1251b;
+}
+
+.application .application-bottom .bottom1 .item {
+    width: 700px;
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 0;
+}
+
+.application .application-bottom .bottom1 .item li {
+    float: left;
+}
+
+.application .application-bottom .bottom1 .item li a:hover {
+    color: #e1251b;
+}
+
+.application .application-bottom .bottom1 .item li a {
+    color: #666666;
+    font-size: 12px;
+    margin: 3px 0;
+    padding: 0 7px;
+}
+
+.application .application-img {
+    width: 198px;
+    height: 424px;
+    float: right;
+    position: relative;
+    top: -434px;
+}
+
+
+/* 设置轮播图 */
+
+.banner-inner {
+    position: relative;
+    width: 790px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+#outer {
+    width: 590px;
+    height: 470px;
+    padding: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#outer #imgsList {
+    width: 5400px;
+    position: absolute;
+    left: 0px;
+}
+
+#imgsList li {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+
+/* 设置轮播图箭头 */
+
+#angleLeft {
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    z-index: 9998;
+    top: 50%;
+    margin-top: -20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, .15);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+#angleRight {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    z-index: 9998;
+    top: 50%;
+    margin-top: -20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, .15);
+    border: none;
+    outline: none;
+    right: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+#angleLeft:hover,
+#angleRight:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+/* 总导航点 */
+
+#pointer {
+    position: absolute;
+    z-index: 9999;
+    /* 确保在最上面，别人无法盖住 */
+    bottom: 20px;
+    left: 40px;
+}
+
+#pointer .navs {
+    float: left;
+    /* 设置元素向左浮动，同时转化为块元素 */
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #ffffff66;
+    background-clip: content-box;
+    /* 将背景颜色设置到内容区，边框和内边距不再有背景颜色 */
+    border: 2px solid transparent;
+}
+
+.active {
+    background-color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, .3) !important;
+}
+
+
+/* 设置小图片列表 */
+
+#picture {
+    float: right;
+}
+
+#picture .imgList {
+    position: relative;
+    width: 190px;
+    height: 470px;
+    top: -470px;
+}
+
+.imgList li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+
+/* 选中ul而不是图片 */
+
+
+/* 设置图片的两个小箭头 */
+
+
+/* #angleLefts {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    z-index: 9998;
+    top: -260px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, .15);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, .8);
+} */
+
+
+/* #angleRights {
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    z-index: 9998;
+    bottom: 765px;
+    right: -165px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, .15);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+}
+
+#angleLefts:hover,
+#angleRights:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#picture:hover #angleLefts,
+#picture:hover #angleRights {
+    display: block;
+} */
+
+
+/* 侧边工具栏的外部容器 */
+
+.user-wrapper {
+    float: right;
+    position: relative;
+    width: 190px;
+    height: 480px;
+    background-color: #fefefe;
+    top: -470px;
+    right: -390px;
+}
+
+
+/* 用户登录容器 */
+
+.user {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 67px 0 0;
+}
+
+.user img {
+    position: absolute;
+    border-radius: 100%;
+    top: 13px;
+    left: 20px;
+    vertical-align: middle;
+    border: none;
+}
+
+.user .hi {
+    position: absolute;
+    left: 70px;
+    top: 16px;
+}
+
+.user .use {
+    position: absolute;
+    left: 70px;
+    top: 34px;
+}
+
+.user span {
+    position: absolute;
+    left: 98px;
+    top: 33px;
+}
+
+.user .register {
+    position: absolute;
+    left: 106px;
+    top: 34px;
+}
+
+.user a:hover {
+    color: #e1251b;
+}
+
+.user .fuli {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #e1251b;
+    border-radius: 13px;
+    text-align: center;
+    color: #fff;
+    margin: 0 5px 0 20px;
+}
+
+.user .plus {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #363634;
+    border-radius: 13px;
+    text-align: center;
+    color: #e5d790;
+    margin: 0 5px 0 0px;
+}
+
+.user .plus:hover,
+.user .fuli:hover {
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+/* 京东快报 */
+
+.news {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.news span {
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.news .more {
+    position: absolute;
+    color: #999;
+    right: 15px;
+}
+
+.more i {
+    margin-left: 5px;
+}
+
+.news a:hover {
+    color: #c81623;
+}
+
+.news-list {
+    display: inline-block;
+    position: relative;
+    top: 26px;
+    left: 15px;
+}
+
+.news .title {
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #e1251b;
+    background-color: #e1251b14;
+    margin-bottom: 5px;
+    margin-right: 6px;
+}
+
+.news .new {
+    color: #666666;
+}
+
+
+/* 右下角图标样式 */
+
+.menu {
+    width: 100%;
+    height: 240px;
+}
+
+.menu-list i {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.menu-list li {
+    position: relative;
+    float: left;
+}
+
+.menu-list li a {
+    text-align: center;
+    display: block;
+    width: 63px;
+    height: 55px;
+}
+
+.blue i {
+    color: rgb(0, 153, 255);
+}
+
+.orange i {
+    color: rgb(252, 179, 43);
+}
+
+.green i {
+    color: rgb(37, 209, 186);
+}
+
+.red i {
+    color: #e1251b;
+}
+
+.menu-list a:hover i,
+.menu-list a:hover,
+.menu-list i:hover {
+    color: #c81623;
+}
