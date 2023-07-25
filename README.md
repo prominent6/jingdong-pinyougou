@@ -14,6 +14,9 @@
 
 ### 商品详情页
 ![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/77563298-a8e7-45d5-b074-099f3249a9d3)
+* 评论区
+![image](https://github.com/prominent6/jingdong-pinyougou/assets/93392935/c52be403-3222-41fa-8326-98c6b4fed2ae)
+
 
 ### 
 
